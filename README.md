@@ -1,4 +1,4 @@
-**Number Plate Detection**
+# Number Plate Detection
 
 📌 Project Overview
 
