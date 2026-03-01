@@ -1,4 +1,5 @@
 **Number Plate Detection**
+
 📌 Project Overview
 
 This project is a Real-Time Automatic License Plate Recognition (ALPR) System that detects vehicle number plates from video input and 
