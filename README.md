@@ -1,6 +1,6 @@
 # Number Plate Detection
 
-📌 Project Overview
+Project Overview
 
 This project is a Real-Time Automatic License Plate Recognition (ALPR) System that detects vehicle number plates from video input and 
 extracts the plate text using Optical Character Recognition (OCR).
@@ -8,7 +8,7 @@ extracts the plate text using Optical Character Recognition (OCR).
 The system uses a custom-trained YOLOv8 model for license plate detection and Tesseract OCR for text recognition. 
 Detected plate numbers are displayed on the video feed and stored with timestamps in an Excel file for record-keeping and analysis.
 
-🎯 Key Features
+Key Features
 
 ✅ Real-time license plate detection from video
 
@@ -27,7 +27,7 @@ Detected plate numbers are displayed on the video feed and stored with timestamp
 ✅ Frame-skipping optimization for performance improvement
 
 
-🛠️ Technologies Used
+## Technologies Used
 
 Python
 
@@ -42,14 +42,14 @@ Pandas – Data storage & Excel export
 Datetime – Timestamp generation
 
 
-⚙️ How the System Works
-1️⃣ Model Loading
+### How the System Works
+1 Model Loading
 
 The custom-trained YOLOv8 model (best.pt) is loaded.
 
 Tesseract OCR path is configured for text extraction.
 
-2️⃣ Video Input
+2️ Video Input
 
 Video file (License Plate Detection Test.mp4) is used as input.
 
@@ -57,19 +57,19 @@ Video properties (width, height, FPS) are captured.
 
 Output video writer is initialized.
 
-3️⃣ Frame Processing
+3️ Frame Processing
 
 Frames are read one by one.
 
 Frame-skipping technique is applied (processes every 2nd frame) to improve speed.
 
-4️⃣ License Plate Detection
+4️ License Plate Detection
 
 YOLO model detects number plate regions.
 
 Bounding box coordinates are extracted.
 
-5️⃣ OCR Processing
+5️ OCR Processing
 
 Detected plate region is cropped.
 
@@ -79,7 +79,7 @@ Non-alphanumeric characters are removed.
 
 Cleaned plate number is stored.
 
-6️⃣ Annotation & Logging
+6️ Annotation & Logging
 
 Bounding boxes drawn on detected plates.
 
@@ -87,7 +87,7 @@ Plate number displayed on video frame.
 
 Plate number + timestamp stored in list.
 
-7️⃣ Output Generation
+7️ Output Generation
 
 Annotated video saved as:
 
@@ -98,7 +98,7 @@ All detected plates saved in Excel:
 detected_number_plates.xlsx
 
 
-🚀 Possible Applications
+### Possible Applications
 
 Smart Traffic Monitoring
 
